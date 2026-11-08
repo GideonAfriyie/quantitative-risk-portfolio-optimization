@@ -33,19 +33,19 @@ The tangency portfolio's **1.2906 Sharpe ratio is an in-sample estimate**, not a
 
 1. Download or clone the repository.
 2. Install dependencies: `pip install -r requirements.txt`.
-3. Open `Financial_Risk_Analysis.ipynb` using Jupyter from the repository root.
-4. Run the notebook cells in order. The data file is expected at `data/daily_prices.csv` and plots save to `figures/`.
-
+3. Add your price data at `data/daily_prices.csv` (see "Data and limitations" for the format).
+4. Open `Financial_Risk_Analysis.ipynb` using Jupyter from the repository root and run the cells in order. Plots save to `figures/`.
+   
 The CSV has **no header**; the notebook assigns the columns `symbol, date, open, high, low, close, volume, adjustment, source, retrieved`.
 
 ## Data and limitations
 
-The historical price CSV was supplied for coursework. Verify any permission or redistribution restrictions before making the dataset public. Closing-price returns are not total returns adjusted for every cash distribution. All portfolio optimization results use estimated **in-sample** moments, ignore trading costs, financing frictions, and estimation uncertainty, and do not establish a real-world investment strategy.
+The price data file is not included in this repository. To run the notebook, add a CSV at `data/daily_prices.csv` with the columns `symbol, date, open, high, low, close, volume, adjustment, source, retrieved` (no header row). Closing-price returns are not total returns adjusted for every cash distribution. All portfolio optimization results use estimated **in-sample** moments, ignore trading costs, financing frictions, and estimation uncertainty, and do not establish a real-world investment strategy.
 
 ## Repository contents
 
 - `Financial_Risk_Analysis.ipynb` — analysis, mathematical notes, charts, and results.
-- `data/daily_prices.csv` — supplied historical data (remove from public upload if redistribution is restricted).
+- `data/daily_prices.csv` — not included.
 - `figures/` — seven exported visuals.
 - `requirements.txt` — Python dependencies.
 
